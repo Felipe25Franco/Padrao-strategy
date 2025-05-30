@@ -8,28 +8,28 @@ public class Cliente {
 
 
     public void pagarComBoleto(double valor) {
-        Pagamento pagamento = new Pagamento(valor);
-        this.valorPago = pagamento.executarPagamento(new OpcaoBoleto());
+        Opcao opcao = new Opcao(valor);
+        this.valorPago = opcao.executarPagamento(new OpcaoBoleto());
     }
 
     public void pagarComCartaoCredito(double valor, int numeroParcelas) {
-        Pagamento pagamento = new Pagamento(valor);
-        this.valorPago = pagamento.executarPagamento(new OpcaoCartaoCredito(numeroParcelas));
+        Opcao opcao = new Opcao(valor);
+        this.valorPago = opcao.executarPagamento(new OpcaoCartaoCredito(numeroParcelas));
     }
 
     public void pagarComCartaoDebito(double valor) {
-        Pagamento pagamento = new Pagamento(valor);
-        this.valorPago = pagamento.executarPagamento(new OpcaoCartaoDebito());
+        Opcao opcao = new Opcao(valor);
+        this.valorPago = opcao.executarPagamento(new OpcaoCartaoDebito());
     }
 
     public void pagarComPix(double valor) {
-        Pagamento pagamento = new Pagamento(valor);
-        this.valorPago = pagamento.executarPagamento(new OpcaoPix());
+        Opcao opcao = new Opcao(valor);
+        this.valorPago = opcao.executarPagamento(new OpcaoPix());
     }
 
     public void pagarComDinheiro(double valor) {
-        Pagamento pagamento = new Pagamento(valor);
-        this.valorPago = pagamento.executarPagamento(new OpcaoDinheiro());
+        Opcao opcao = new Opcao(valor);
+        this.valorPago = opcao.executarPagamento(new OpcaoDinheiro());
     }
 
 

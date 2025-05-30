@@ -1,8 +1,8 @@
-public class Pagamento {
+public class Opcao {
 
     private double valor;
 
-    public Pagamento(double valor) {
+    public Opcao(double valor) {
         this.valor = valor;
     }
 
