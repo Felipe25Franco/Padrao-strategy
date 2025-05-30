@@ -1,0 +1,2 @@
+# Padrao-strategy
+
