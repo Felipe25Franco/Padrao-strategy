@@ -1,4 +1,3 @@
-
 public class OpcaoDinheiro implements OpcaoPagamento {
     @Override
     public double pagar(double valor) {
