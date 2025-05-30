@@ -46,7 +46,7 @@ class ClienteTest {
     }
 
     @Test
-    void devePagarComCartaoCreditoParceladoComMaisParcelas() {
+    void devePagarComCartaoCreditoParceladoComMaximoParcelas() {
         Cliente cliente = new Cliente();
         cliente.pagarComCartaoCredito(1500.0, 10);
         assertEquals(1500.0, cliente.getValorPago());
